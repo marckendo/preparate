@@ -1,0 +1,19 @@
+
+<div class="row">
+
+
+
+<% @cursos.each do |curso| %>
+
+<div class="columna">
+            <%= image_tag(curso.imagen, size: '140x140') %><br>
+        <h1><%= curso.titulo %> </h1> <br>
+         <h1><em><%= curso.descripcion %></em> </h1><br>
+         <h1><b class="precio"><%= curso.precio %></b></h1><br>
+     <h1><b class="Desplegar"><%= link_to 'Desplegar', curso%></b></h1> <br>
+       
+
+</div>
+     
+    <% end %>
+</div>
